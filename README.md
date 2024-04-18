@@ -4,37 +4,41 @@
     "examNo": "MB-310",
     "items": [
         {
-            "itemId": "da43c5f7-6a20-46bd-ad46-f9a9e295f1fa",
-            "stem": "A multinational corporation is implementing Microsoft Dynamics 365 Finance and needs to track sales order numbers as part of their financial entries for internal analysis. You need to configure the system to allow for this tracking without cluttering the chart of accounts or using financial dimensions, ensuring the data remains available for reporting even if the feature is later disabled. What should you do?",
-            "answerKey": "C",
+            "itemId": "9a62e6ab-96d9-41a9-9511-ee6842c478ec",
+            "stem": "You are a Functional Consultant for Contoso Ltd. The company uses Microsoft Dynamics 365 Field Service and has recently integrated it with Azure IoT Central to manage their smart trash containers. The company wants to automate the process of registering devices in IoT Central when a new customer asset is created in Dynamics 365. You need to create a solution that will automatically register a device in IoT Central whenever a new customer asset is created in Dynamics 365 Field Service. Each correct answer presents part of the solution. Which three actions should you perform?",
+            "answerKey": "B,C,E",
             "answerChoices": [
                 {
                     "answerId": "A",
-                    "answerText": "Configure a new main account specifically for tracking sales order numbers."
+                    "answerText": "Create a new IoT device record in Dynamics 365 using the device ID returned by the 'Create a Device' action."
                 },
                 {
                     "answerId": "B",
-                    "answerText": "Create a new financial dimension for sales order numbers and add it to the account structure."
+                    "answerText": "Create a Power Automate flow that triggers when a new customer asset record is created in Dynamics 365."
                 },
                 {
                     "answerId": "C",
-                    "answerText": "Enable the Financial tags feature in the Feature management workspace and create a financial tag for sales order numbers."
+                    "answerText": "In the Power Automate flow, use the 'Create a Device' action from the Azure IoT Central connector."
                 },
                 {
                     "answerId": "D",
-                    "answerText": "Use the document number field on transactions to track sales order numbers."
+                    "answerText": "Manually register the device in IoT Central using the device ID returned by the 'Create a Device' action."
+                },
+                {
+                    "answerId": "E",
+                    "answerText": "Update the customer asset record in Dynamics 365 with the device ID returned by the 'Create a Device' action."
                 }
             ],
-            "itemType": "singleCorrectAnswer",
-            "objectiveId": "1.1",
-            "objectiveText": "Define and configure the chart of accounts",
-            "rationale": "Financial tags are designed to track additional information like sales order numbers without using financial dimensions. Creating a new financial dimension or main account would unnecessarily complicate the chart of accounts. Using the document number field is not a scalable or clean solution for tracking purposes.",
+            "itemType": "multipleCorrectAnswer",
+            "objectiveId": "7.3",
+            "objectiveText": "Configure Microsoft Power Pages",
+            "rationale": "To automate the process of registering devices in IoT Central when a new customer asset is created in Dynamics 365, you should create a Power Automate flow that triggers when a new customer asset record is created in Dynamics 365. In this flow, you should use the 'Create a Device' action from the Azure IoT Central connector to register the device in IoT Central. Finally, you should update the customer asset record in Dynamics 365 with the device ID returned by the 'Create a Device' action. Creating a new IoT device record in Dynamics 365 or manually registering the device in IoT Central are not necessary steps in this process.",
             "sourceURL": [
-                "https://learn.microsoft.com/en-us/training/modules/get-started-expense-management",
-                "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-tag"
+                "https://learn.microsoft.com/en-us/training/modules/using-IoT-central-with-connected-field-service",
+                "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration"
             ],
             "trainingURL": [
-                "https://learn.microsoft.com/en-us/training/modules/get-started-expense-management"
+                "https://learn.microsoft.com/en-us/training/modules/using-IoT-central-with-connected-field-service"
             ],
             "similarityCheckPass": true,
             "llmCheckPass": false,
